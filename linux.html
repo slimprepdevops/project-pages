@@ -17,14 +17,47 @@ mkdir - create a directory
 cd ~ - change to home directory
 cd / - change to root directory
 cd .. - return one step in the directory
+cd -  - returns you to the previously assessed working directory
 
 
-touch - create a file (without opening an interface to edit)
+touch - create an empty file (without opening an interface to edit)
 vi - edit an existing file OR if the file doesnt exist, it creates the file and allows you to edit
 cat - view contents of an existing file.
 sudo - grant administrative privilege
 adduser - create a new user
 su - switch user
+
+
+rm - delete a file
+cp - copies a file
+command --help (provides extra extensions about your command). E.g. cp --help, mv --help
+cp -r - copies the folder and it's contents 
+rm -rf - removes a folder, its contents without prompting for confirmation (f is for force)
+cp -rv - copies a folder, its contents and describes what is done.
+
+VI EDITOR
+To edit in VI editor : press I from the command mode
+The command to save is :wq!
+
+The command for closing without saving is :qa!
+
+To edit in VI editor : press I from the command mode
+
+To delete a line in vi editor: press d twice ( i.e. dd) from the command mode
+
+To delete x number of lines: press dxd (where x is the number of lines from the cursor). E.g to delete 5 lines, press d5d.
+
+To search for a text in the file; press / then the text. E.g to search for "class" in the file, type /class and press enter. To search next, press n; to search previous, press N
+
+
+SSH From Windows - Slim Prep Style
+cd ~/Downloads
+ls
+ls ~/.ssh
+cp yourprivatekey.pem ~/.ssh
+cd ~/.ssh
+ssh -i "tspcloud.pem" ubuntu@ec2-3-98-140-149.ca-central-1.compute.amazonaws.com
+
 
 Create Access to AWS Billing from IAM account
 - Sign in as a root user and navigate to IAM
