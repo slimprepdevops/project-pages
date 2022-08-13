@@ -25,3 +25,12 @@ cat - view contents of an existing file.
 sudo - grant administrative privilege
 adduser - create a new user
 su - switch user
+
+Create Access to AWS Billing from IAM account
+- Sign in as a root user and navigate to IAM
+- Go to the User details in IAM (should already have administrator access)
+- Add permission and choose Billing
+- Click on arrow beside your name on the top right corner of the console and choose account
+- Click on edit at the 'IAM User and Role Access to Billing Information' section
+- Check activate IAM access.
+- Log in as the user you just enabled Billing access for
