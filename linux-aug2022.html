@@ -299,124 +299,120 @@
                                     <div class="date">13 Feb, 2016  /  2 Comments</div>
                                     <h3>How to Become a Best Sales Marketer in a few Years</h3>
                                     
-<h1>Linux Operating System</h1>
-Linux is an operating system just like windows and Mac
-    Various variants
-        - Ubuntu
-        - Redhat
-        - Amazon Linux
-
-We will be accessing Linux through the terminal via SSH
-
-clear - clear your screen
-ls - list directory (has other parameters)
-pwd - present working directory 
-cd - change directory
-mkdir - create a directory
-
-cd ~ - change to home directory
-cd / - change to root directory
-cd .. - return one step in the directory
-cd -  - returns you to the previously assessed working directory
-
-
-touch - create an empty file (without opening an interface to edit)
-vi - edit an existing file OR if the file doesnt exist, it creates the file and allows you to edit
-cat - view contents of an existing file.
-sudo - grant administrative privilege
-adduser - create a new user
-su - switch user
-
-
-rm - delete a file
-cp - copies a file
-command --help (provides extra extensions about your command). E.g. cp --help, mv --help
-cp -r - copies the folder and it's contents 
-rm -rf - removes a folder, its contents without prompting for confirmation (f is for force)
-cp -rv - copies a folder, its contents and describes what is done.
-
-VI EDITOR
-To edit in VI editor : press I from the command mode
-The command to save is :wq!
-
-The command for closing without saving is :qa!
-
-To edit in VI editor : press I from the command mode
-
-To delete a line in vi editor: press d twice ( i.e. dd) from the command mode
-
-To delete x number of lines: press dxd (where x is the number of lines from the cursor). E.g to delete 5 lines, press d5d.
-
-To search for a text in the file; press / then the text. E.g to search for "class" in the file, type /class and press enter. To search next, press n; to search previous, press N
-
-
-SSH From Windows - Slim Prep Style
-cd ~/Downloads
-ls
-ls ~/.ssh
-cp yourprivatekey.pem ~/.ssh
-cd ~/.ssh
-ssh -i "tspcloud.pem" ubuntu@ec2-3-98-140-149.ca-central-1.compute.amazonaws.com
-
-
-Create Access to AWS Billing from IAM account
-- Sign in as a root user and navigate to IAM
-- Go to the User details in IAM (should already have administrator access)
-- Add permission and choose Billing
-- Click on arrow beside your name on the top right corner of the console and choose account
-- Click on edit at the 'IAM User and Role Access to Billing Information' section
-- Check activate IAM access.
-- Log in as the user you just enabled Billing access for
-
-
-Users and Groups
-sudo su - : Switches to the root user e.g. sudo su - aakinyera
-sudo usermod: modify status of a linux user
-    to add a user to have admin rights: sudo usermod -aG sudo user-to-add
-sudo adduser - create a new user
-sudo deluser - deletes an existing user
-groupadd - create a group
-chmod - change permissions for files or directory
-chown - change ownership of files or directory
-
-Permissions
-- rwx rwx rwx
-
-- d for directory; - for file
-
-r - read      | Score 4
-w - write     | Score 2
-x - execute   | Score 1
-Each user can always total a maximum of 7 
-
-1st rwx is for the user
-2nd rwx is for the group
-3rd rwx is for others
-
-
-Installing applications
-- apt (debian) or yum (redhat) - repositories for standard applications
-- curl (downloads the installation file and you can execute)
-- snap (app store for linux)
-
-Saturday 
-- append >>
-- piping
-- grep
-- history
-- echo
-- ;
-- &&
-- less
-- write to file >
-- tail 
-- df -h 
-- check logs
-- SSH
-- scp
-- unzip
-- tar
-
+<!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+<div>
+    <div>Linux Operating System</div>
+    <div>Linux is an operating system just like windows and Mac</div>
+    <div>Various variants</div>
+    <div>- Ubuntu</div>
+    <div>- Redhat</div>
+    <div>- Amazon Linux</div>
+    <br />
+    <div>We will be accessing Linux through the terminal via SSH</div>
+    <br />
+    <div>clear - clear your screen</div>
+    <div>ls - list directory (has other parameters)</div>
+    <div>pwd - present working directory</div>
+    <div>cd - change directory</div>
+    <div>mkdir - create a directory</div>
+    <br />
+    <div>cd ~ - change to home directory</div>
+    <div>cd / - change to root directory</div>
+    <div>cd .. - return one step in the directory</div>
+    <div>cd - - returns you to the previously assessed working directory</div>
+    <br /><br />
+    <div>touch - create an empty file (without opening an interface to edit)</div>
+    <div>vi - edit an existing file OR if the file doesnt exist, it creates the file and allows you to edit</div>
+    <div>cat - view contents of an existing file.</div>
+    <div>sudo - grant administrative privilege</div>
+    <div>adduser - create a new user</div>
+    <div>su - switch user</div>
+    <br /><br />
+    <div>rm - delete a file</div>
+    <div>cp - copies a file</div>
+    <div>command --help (provides extra extensions about your command). E.g. cp --help, mv --help</div>
+    <div>cp -r - copies the folder and it's contents</div>
+    <div>rm -rf - removes a folder, its contents without prompting for confirmation (f is for force)</div>
+    <div>cp -rv - copies a folder, its contents and describes what is done.</div>
+    <br />
+    <div>VI EDITOR</div>
+    <div>To edit in VI editor : press I from the command mode</div>
+    <div>The command to save is :wq!</div>
+    <br />
+    <div>The command for closing without saving is :qa!</div>
+    <br />
+    <div>To edit in VI editor : press I from the command mode</div>
+    <br />
+    <div>To delete a line in vi editor: press d twice ( i.e. dd) from the command mode</div>
+    <br />
+    <div>To delete x number of lines: press dxd (where x is the number of lines from the cursor). E.g to delete 5 lines, press d5d.</div>
+    <br />
+    <div>To search for a text in the file; press / then the text. E.g to search for "class" in the file, type /class and press enter. To search next, press n; to search previous, press N</div>
+    <br /><br />
+    <div>SSH From Windows - Slim Prep Style</div>
+    <div>cd ~/Downloads</div>
+    <div>ls</div>
+    <div>ls ~/.ssh</div>
+    <div>cp yourprivatekey.pem ~/.ssh</div>
+    <div>cd ~/.ssh</div>
+    <div>ssh -i "tspcloud.pem" ubuntu@ec2-3-98-140-149.ca-central-1.compute.amazonaws.com</div>
+    <br /><br />
+    <div>Create Access to AWS Billing from IAM account</div>
+    <div>- Sign in as a root user and navigate to IAM</div>
+    <div>- Go to the User details in IAM (should already have administrator access)</div>
+    <div>- Add permission and choose Billing</div>
+    <div>- Click on arrow beside your name on the top right corner of the console and choose account</div>
+    <div>- Click on edit at the 'IAM User and Role Access to Billing Information' section</div>
+    <div>- Check activate IAM access.</div>
+    <div>- Log in as the user you just enabled Billing access for</div>
+    <br /><br />
+    <div>Users and Groups</div>
+    <div>sudo su - : Switches to the root user e.g. sudo su - aakinyera</div>
+    <div>sudo usermod: modify status of a linux user</div>
+    <div>to add a user to have admin rights: sudo usermod -aG sudo user-to-add</div>
+    <div>sudo adduser - create a new user</div>
+    <div>sudo deluser - deletes an existing user</div>
+    <div>groupadd - create a group</div>
+    <div>chmod - change permissions for files or directory</div>
+    <div>chown - change ownership of files or directory</div>
+    <br />
+    <div>Permissions</div>
+    <div>- rwx rwx rwx</div>
+    <br />
+    <div>- d for directory; - for file</div>
+    <br />
+    <div>r - read | Score 4</div>
+    <div>w - write | Score 2</div>
+    <div>x - execute | Score 1</div>
+    <div>Each user can always total a maximum of 7</div>
+    <br />
+    <div>1st rwx is for the user</div>
+    <div>2nd rwx is for the group</div>
+    <div>3rd rwx is for others</div>
+    <br /><br />
+    <div>Installing applications</div>
+    <div>- apt (debian) or yum (redhat) - repositories for standard applications</div>
+    <div>- curl (downloads the installation file and you can execute)</div>
+    <div>- snap (app store for linux)</div>
+    <br />
+    <div>Saturday</div>
+    <div>- append &gt;&gt;</div>
+    <div>- piping</div>
+    <div>- grep</div>
+    <div>- history</div>
+    <div>- echo</div>
+    <div>- ;</div>
+    <div>- &amp;&amp;</div>
+    <div>- less</div>
+    <div>- write to file &gt;</div>
+    <div>- tail</div>
+    <div>- df -h</div>
+    <div>- check logs</div>
+    <div>- SSH</div>
+    <div>- scp</div>
+    <div>- unzip</div>
+    <div>- tar</div>
+    </div>
 </div>
                                     
                                     <!--Post Option-->
